@@ -1,0 +1,116 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   14 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "max_decrease"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "max_decrease"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "max_increase"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "max_increase"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "collision_time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "collision_time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "comm_loss_time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "comm_loss_time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "comm_ref_throttle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "comm_ref_throttle"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "loss_tmr"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "loss_tmr"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "phase2_time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "phase2_time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "severe_time"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "severe_time"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_rover_sw_pwrtrain_24b"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c3_rover_sw_pwrtrain_24b"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_COLLISION_FLT_FAST_STOP"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "COLLISION_FLT_FAST_STOP"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_LOST_COMM_OPERATION"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOST_COMM_OPERATION"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_NORMAL_OPERATION"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "NORMAL_OPERATION"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

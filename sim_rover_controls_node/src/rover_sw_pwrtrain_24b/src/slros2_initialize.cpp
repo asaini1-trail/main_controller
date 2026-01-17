@@ -1,0 +1,33 @@
+// Copyright 2022-2024 The MathWorks, Inc.
+// Generated 11-Jan-2026 12:00:11
+#include "slros2_initialize.h"
+// rover_sw_pwrtrain_24b/ros_publish/Publish1
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_907;
+// rover_sw_pwrtrain_24b/ros_publish/Publish2
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_826;
+// rover_sw_pwrtrain_24b/ros_publish/Publish3
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_246;
+// rover_sw_pwrtrain_24b/ros_publish/Publish5
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_903;
+// rover_sw_pwrtrain_24b/trailhead_main/motor_controls/Subsystem/Publish1
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_542;
+// rover_sw_pwrtrain_24b/trailhead_main/motor_controls/Subsystem/Publish2
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_543;
+// rover_sw_pwrtrain_24b/trailhead_main/motor_controls/Subsystem1/Publish1
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_138;
+// rover_sw_pwrtrain_24b/trailhead_main/motor_controls/Subsystem1/Publish2
+SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_139;
+// rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish1
+SimulinkPublisher<std_msgs::msg::Float32,SL_Bus_std_msgs_Float32> Pub_rover_sw_pwrtrain_24b_818;
+// rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish2
+SimulinkPublisher<std_msgs::msg::Float32MultiArray,SL_Bus_std_msgs_Float32MultiArray> Pub_rover_sw_pwrtrain_24b_822;
+// rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish4
+SimulinkPublisher<std_msgs::msg::Float32,SL_Bus_std_msgs_Float32> Pub_rover_sw_pwrtrain_24b_835;
+// rover_sw_pwrtrain_24b/ros_subscribe/Subscribe
+SimulinkSubscriber<std_msgs::msg::Float32,SL_Bus_std_msgs_Float32> Sub_rover_sw_pwrtrain_24b_390;
+// rover_sw_pwrtrain_24b/ros_subscribe/Subscribe1
+SimulinkSubscriber<std_msgs::msg::Float32,SL_Bus_std_msgs_Float32> Sub_rover_sw_pwrtrain_24b_391;
+// rover_sw_pwrtrain_24b/ros_subscribe/Subscribe2
+SimulinkSubscriber<std_msgs::msg::Float32,SL_Bus_std_msgs_Float32> Sub_rover_sw_pwrtrain_24b_392;
+// rover_sw_pwrtrain_24b/ros_subscribe/Subscribe4
+SimulinkSubscriber<std_msgs::msg::Bool,SL_Bus_std_msgs_Bool> Sub_rover_sw_pwrtrain_24b_521;
