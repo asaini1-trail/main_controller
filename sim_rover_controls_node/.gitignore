@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But include these specific files
+!rover_sw_pwrtrain_24b.slx
+!vesc_uart.c
+!vesc_uart.h
+!.gitignore
+
