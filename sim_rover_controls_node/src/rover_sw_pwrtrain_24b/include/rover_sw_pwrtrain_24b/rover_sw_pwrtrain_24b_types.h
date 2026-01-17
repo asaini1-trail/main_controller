@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.102
+ * Model version              : 1.108
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Sun Jan 11 12:00:06 2026
+ * C++ source code generated on : Fri Jan 16 23:21:35 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -120,7 +120,7 @@ typedef enum {
 
 #endif
 
-/* Custom Type definition for MATLABSystem: '<S58>/SinkBlock' */
+/* Custom Type definition for MATLABSystem: '<S57>/SinkBlock' */
 #include "rmw/qos_profiles.h"
 #ifndef struct_sJ4ih70VmKcvCeguWN0mNVF
 #define struct_sJ4ih70VmKcvCeguWN0mNVF
@@ -205,7 +205,6 @@ struct nav_slalgs_internal_PurePursu_T
 {
   int32_T isInitialized;
   cell_wrap_rover_sw_pwrtrain_2_T inputVarSize[2];
-  boolean_T CacheInputSizes;
   real_T MaxAngularVelocity;
   real_T LookaheadDistance;
   real_T DesiredLinearVelocity;
@@ -213,7 +212,7 @@ struct nav_slalgs_internal_PurePursu_T
   real_T ProjectionLineIndex;
   real_T LookaheadPoint[2];
   real_T LastPose[3];
-  real_T WaypointsInternal[20000];
+  real_T WaypointsInternal[1756];
 };
 
 #endif                              /* struct_nav_slalgs_internal_PurePursu_T */

@@ -1,5 +1,5 @@
 // Copyright 2022-2024 The MathWorks, Inc.
-// Generated 11-Jan-2026 12:00:11
+// Generated 16-Jan-2026 23:21:42
 #ifndef _SLROS2_INITIALIZE_H_
 #define _SLROS2_INITIALIZE_H_
 #include "rover_sw_pwrtrain_24b_types.h"

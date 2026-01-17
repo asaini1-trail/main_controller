@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.102
+ * Model version              : 1.108
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Sun Jan 11 12:00:06 2026
+ * C++ source code generated on : Fri Jan 16 23:21:35 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -25,7 +25,6 @@
 #include "rtw_solver.h"
 #include "slros2_initialize.h"
 #include "rover_sw_pwrtrain_24b_types.h"
-#include "coder_array.h"
 
 extern "C"
 {
@@ -183,37 +182,34 @@ struct B_EnabledSubsystem_rover_sw_p_T {
 
 /* Block signals (default storage) */
 struct B_rover_sw_pwrtrain_24b_T {
-  coder::array<int16_T,2> laneX;
-  coder::array<real_T,2> waypoints;
-  real_T paddedWaypts[20000];
-  real_T waypoints_m[20000];           /* '<S26>/MATLAB Function1' */
-  int16_T tmp_data[10000];
   SL_Bus_std_msgs_Float32MultiArray BusAssignment;/* '<S27>/Bus Assignment' */
+  boolean_T b[1756];
+  int16_T tmp_data[878];
+  boolean_T bv[878];
   real32_T data[128];                  /* '<S27>/MATLAB Function2' */
-  uint32_T inSize[8];
   char_T b_zeroDelimTopic[31];
+  char_T b_zeroDelimTopic_m[28];
   char_T b_zeroDelimTopic_c[28];
-  char_T b_zeroDelimTopic_k[28];
+  char_T b_zeroDelimTopic_k[27];
   char_T b_zeroDelimTopic_cx[27];
   char_T b_zeroDelimTopic_b[27];
-  char_T b_zeroDelimTopic_p[27];
-  char_T b_zeroDelimTopic_cv[24];
+  char_T b_zeroDelimTopic_p[24];
   real_T Integrator[3];                /* '<S47>/Integrator' */
-  char_T b_zeroDelimTopic_f[22];
-  char_T b_zeroDelimTopic_g[20];
-  char_T b_zeroDelimTopic_g1[19];
-  char_T b_zeroDelimTopic_m[18];
-  char_T b_zeroDelimTopic_n[18];
-  char_T b_zeroDelimTopic_pp[16];
+  char_T b_zeroDelimTopic_cv[22];
+  char_T b_zeroDelimTopic_f[20];
+  char_T b_zeroDelimTopic_g[19];
+  char_T b_zeroDelimTopic_g1[18];
+  char_T b_zeroDelimTopic_me[18];
+  char_T b_zeroDelimTopic_n[16];
   sJ4ih70VmKcvCeguWN0mNVF deadline;
-  sJ4ih70VmKcvCeguWN0mNVF deadline_l;
+  sJ4ih70VmKcvCeguWN0mNVF deadline_p;
   real32_T voltages[4];                /* '<S27>/MATLAB Function' */
   real32_T current_motor[4];           /* '<S27>/MATLAB Function' */
   real32_T current_battery[4];         /* '<S27>/MATLAB Function' */
   real32_T rpm[4];                     /* '<S27>/MATLAB Function' */
   real_T lookaheadStartPt[2];
-  real_T waypoints_j[2];
-  real_T waypoints_d[2];
+  real_T lookaheadStartPt_l[2];
+  real_T dv[2];
   real_T refPt[2];
   real_T Product;                      /* '<S48>/Product' */
   real_T Product1;                     /* '<S48>/Product1' */
@@ -221,24 +217,25 @@ struct B_rover_sw_pwrtrain_24b_T {
   real_T throttle_out;                 /* '<S35>/adaptive_throttle_contller' */
   real_T decay_mode;                   /* '<S35>/adaptive_throttle_contller' */
   real_T last_good_time;               /* '<S35>/adaptive_throttle_contller' */
-  real_T y;
+  real_T minDistance;
   real_T i;
-  real_T overshootDist;
+  real_T lookaheadIdx;
   real_T Add;                          /* '<S30>/Add' */
-  real_T waypoints_tmp;
-  real_T waypoints_tmp_g;
+  real_T lookaheadStartPt_tmp;
+  real_T lookaheadStartPt_tmp_j;
   real_T Switch;                       /* '<S4>/Switch' */
   real_T alpha;
   real_T v12;
-  real_T v12_l;
+  real_T v12_d;
   real_T scale;
   real_T absxk;
   real_T t;
   SL_Bus_std_msgs_Bool In1;            /* '<S21>/In1' */
-  int32_T targetX;
-  int32_T i_d;
+  int32_T b_i;
   int32_T ret;
+  collision_flt Switch_b;              /* '<S30>/Switch' */
   SL_Bus_std_msgs_Int32 BusAssignment3;/* '<S3>/Bus Assignment3' */
+  SL_Bus_std_msgs_Int32 BusAssignment2;/* '<S3>/Bus Assignment2' */
   uint8_T fault_codes[4];              /* '<S27>/MATLAB Function' */
   boolean_T SourceBlock_o1_m;          /* '<S16>/SourceBlock' */
   boolean_T SourceBlock_o1_n;          /* '<S15>/SourceBlock' */
@@ -252,9 +249,9 @@ struct B_rover_sw_pwrtrain_24b_T {
 struct DW_rover_sw_pwrtrain_24b_T {
   nav_slalgs_internal_PurePursu_T obj; /* '<S25>/Pure Pursuit' */
   robotics_slmobile_internal_bl_T obj_j;/* '<S47>/MATLAB System' */
-  ros_slros2_internal_block_Pub_T obj_d;/* '<S58>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_k;/* '<S57>/SinkBlock' */
-  ros_slros2_internal_block_Pub_T obj_ju;/* '<S56>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_d;/* '<S57>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_k;/* '<S56>/SinkBlock' */
+  ros_slros2_internal_block_Pub_T obj_ju;/* '<S55>/SinkBlock' */
   ros_slros2_internal_block_Pub_T obj_n;/* '<S40>/SinkBlock' */
   ros_slros2_internal_block_Pub_T obj_c;/* '<S39>/SinkBlock' */
   ros_slros2_internal_block_Pub_T obj_p;/* '<S44>/SinkBlock' */
@@ -277,7 +274,6 @@ struct DW_rover_sw_pwrtrain_24b_T {
   real_T loss_tmr;                     /* '<S35>/adaptive_throttle_contller' */
   real_T phase2_time;                  /* '<S35>/adaptive_throttle_contller' */
   real_T severe_time;                  /* '<S35>/adaptive_throttle_contller' */
-  int32_T SFunction_DIMS2[2];          /* '<S26>/MATLAB Function1' */
   uint16_T temporalCounter_i1;         /* '<S35>/adaptive_throttle_contller' */
   int8_T If_ActiveSubsystem;           /* '<S24>/If' */
   uint8_T is_active_c3_rover_sw_pwrtrain_;/* '<S35>/adaptive_throttle_contller' */
@@ -285,9 +281,9 @@ struct DW_rover_sw_pwrtrain_24b_T {
   uint8_T is_COLLISION_FLT_FAST_STOP;  /* '<S35>/adaptive_throttle_contller' */
   uint8_T is_LOST_COMM_OPERATION;      /* '<S35>/adaptive_throttle_contller' */
   uint8_T is_NORMAL_OPERATION;         /* '<S35>/adaptive_throttle_contller' */
-  boolean_T objisempty;                /* '<S58>/SinkBlock' */
-  boolean_T objisempty_p;              /* '<S57>/SinkBlock' */
-  boolean_T objisempty_o;              /* '<S56>/SinkBlock' */
+  boolean_T objisempty;                /* '<S57>/SinkBlock' */
+  boolean_T objisempty_p;              /* '<S56>/SinkBlock' */
+  boolean_T objisempty_o;              /* '<S55>/SinkBlock' */
   boolean_T objisempty_e;              /* '<S25>/Pure Pursuit' */
   boolean_T objisempty_ok;             /* '<S47>/MATLAB System' */
   boolean_T objisempty_j;              /* '<S40>/SinkBlock' */
@@ -329,6 +325,14 @@ struct ODE3_IntgData {
 };
 
 #endif
+
+/* Constant parameters (default storage) */
+struct ConstP_rover_sw_pwrtrain_24b_T {
+  /* Expression: waypoints
+   * Referenced by: '<S26>/Constant4'
+   */
+  real_T Constant4_Value[1756];
+};
 
 /* Constant parameters with dynamic initialization (default storage) */
 struct ConstInitP_rover_sw_pwrtrain__T {
@@ -384,6 +388,9 @@ struct tag_RTM_rover_sw_pwrtrain_24b_T {
     time_T tArray[4];
   } Timing;
 };
+
+/* Constant parameters (default storage) */
+extern const ConstP_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_ConstP;
 
 /* Constant parameters with dynamic initialization (default storage) */
 extern ConstInitP_rover_sw_pwrtrain__T rover_sw_pwrtrain_24_ConstInitP;/* constant parameters */
@@ -572,15 +579,14 @@ extern volatile boolean_T runModel;
  * '<S46>'  : 'rover_sw_pwrtrain_24b/trailhead_main/motor_controls/throttle_regulation/adaptive_throttle_contller'
  * '<S47>'  : 'rover_sw_pwrtrain_24b/trailhead_main/path_following/Differential Drive Kinematic Model'
  * '<S48>'  : 'rover_sw_pwrtrain_24b/trailhead_main/path_following/Zero-Velocity At Goal'
- * '<S49>'  : 'rover_sw_pwrtrain_24b/trailhead_main/path_generation/MATLAB Function1'
- * '<S50>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message1'
- * '<S51>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message2'
- * '<S52>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message4'
- * '<S53>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function'
- * '<S54>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function1'
- * '<S55>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function2'
- * '<S56>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish1'
- * '<S57>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish2'
- * '<S58>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish4'
+ * '<S49>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message1'
+ * '<S50>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message2'
+ * '<S51>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Blank Message4'
+ * '<S52>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function'
+ * '<S53>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function1'
+ * '<S54>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/MATLAB Function2'
+ * '<S55>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish1'
+ * '<S56>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish2'
+ * '<S57>'  : 'rover_sw_pwrtrain_24b/trailhead_main/telemetry/Publish4'
  */
 #endif                                 /* rover_sw_pwrtrain_24b_h_ */

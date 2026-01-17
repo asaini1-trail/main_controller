@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.102
+ * Model version              : 1.108
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Sun Jan 11 12:00:06 2026
+ * C++ source code generated on : Fri Jan 16 23:21:35 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -192,11 +192,11 @@ void rover_sw_pwrtrain_24b::rover_sw_p_Subscriber_setupImpl(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 18; i++) {
     /* Start for MATLABSystem: '<S14>/SourceBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_n[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_me[i] = b_zeroDelimTopic[i];
   }
 
   Sub_rover_sw_pwrtrain_24b_390.createSubscriber
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_n[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_me[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover_sw_Subscriber_setupImpl_m(const
@@ -223,11 +223,11 @@ void rover_sw_pwrtrain_24b::rover_sw_Subscriber_setupImpl_m(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 19; i++) {
     /* Start for MATLABSystem: '<S15>/SourceBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g1[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g[i] = b_zeroDelimTopic[i];
   }
 
   Sub_rover_sw_pwrtrain_24b_391.createSubscriber
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g1[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover_sw_Publisher_setupImpl_my(const
@@ -241,8 +241,8 @@ void rover_sw_pwrtrain_24b::rover_sw_Publisher_setupImpl_my(const
   qos_profile = rmw_qos_profile_default;
 
   /* Start for MATLABSystem: '<S12>/SinkBlock' */
-  rover_sw_pwrtrain_24b_B.deadline_l.sec = 0.0;
-  rover_sw_pwrtrain_24b_B.deadline_l.nsec = 0.0;
+  rover_sw_pwrtrain_24b_B.deadline_p.sec = 0.0;
+  rover_sw_pwrtrain_24b_B.deadline_p.nsec = 0.0;
   lifespan.sec = 0.0;
   lifespan.nsec = 0.0;
   liveliness_lease_duration.sec = 0.0;
@@ -250,7 +250,7 @@ void rover_sw_pwrtrain_24b::rover_sw_Publisher_setupImpl_my(const
   SET_QOS_VALUES(qos_profile, RMW_QOS_POLICY_HISTORY_KEEP_LAST, (size_t)1.0,
                  RMW_QOS_POLICY_DURABILITY_VOLATILE,
                  RMW_QOS_POLICY_RELIABILITY_RELIABLE,
-                 rover_sw_pwrtrain_24b_B.deadline_l, lifespan,
+                 rover_sw_pwrtrain_24b_B.deadline_p, lifespan,
                  RMW_QOS_POLICY_LIVELINESS_AUTOMATIC, liveliness_lease_duration,
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 11; i++) {
@@ -286,11 +286,11 @@ void rover_sw_pwrtrain_24b::rover_sw__Publisher_setupImpl_m(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 22; i++) {
     /* Start for MATLABSystem: '<S11>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_f[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cv[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_826.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_f[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cv[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover_s_Subscriber_setupImpl_my(const
@@ -317,11 +317,11 @@ void rover_sw_pwrtrain_24b::rover_s_Subscriber_setupImpl_my(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 16; i++) {
     /* Start for MATLABSystem: '<S16>/SourceBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_pp[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_n[i] = b_zeroDelimTopic[i];
   }
 
   Sub_rover_sw_pwrtrain_24b_392.createSubscriber
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_pp[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_n[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover__Subscriber_setupImpl_myg(const
@@ -348,11 +348,11 @@ void rover_sw_pwrtrain_24b::rover__Subscriber_setupImpl_myg(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 18; i++) {
     /* Start for MATLABSystem: '<S17>/SourceBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_m[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g1[i] = b_zeroDelimTopic[i];
   }
 
   Sub_rover_sw_pwrtrain_24b_521.createSubscriber
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_m[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g1[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover_sw_pw_Publisher_setupImpl(const
@@ -411,11 +411,11 @@ void rover_sw_pwrtrain_24b::rover_s_Publisher_setupImpl_myg(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 20; i++) {
     /* Start for MATLABSystem: '<S13>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_f[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_903.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_g[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_f[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover__Publisher_setupImpl_mygo(const
@@ -442,11 +442,11 @@ void rover_sw_pwrtrain_24b::rover__Publisher_setupImpl_mygo(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 27; i++) {
     /* Start for MATLABSystem: '<S43>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_p[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_b[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_138.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_p[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_b[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rover_Publisher_setupImpl_mygou(const
@@ -473,11 +473,11 @@ void rover_sw_pwrtrain_24b::rover_Publisher_setupImpl_mygou(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 28; i++) {
     /* Start for MATLABSystem: '<S44>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_k[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_c[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_139.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_k[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_c[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rove_Publisher_setupImpl_mygou5(const
@@ -504,11 +504,11 @@ void rover_sw_pwrtrain_24b::rove_Publisher_setupImpl_mygou5(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 27; i++) {
     /* Start for MATLABSystem: '<S39>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_b[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cx[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_542.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_b[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cx[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::rov_Publisher_setupImpl_mygou5b(const
@@ -535,11 +535,11 @@ void rover_sw_pwrtrain_24b::rov_Publisher_setupImpl_mygou5b(const
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 28; i++) {
     /* Start for MATLABSystem: '<S40>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_c[i] = b_zeroDelimTopic[i];
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_m[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_543.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_c[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_m[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::DifferentialDriveKinematics_set
@@ -570,7 +570,7 @@ void rover_sw_pwrtrain_24b::ro_Publisher_setupImpl_mygou5bo(const
   static const char_T b_zeroDelimTopic[31] = "vesc/telemetry/voltage/average";
   qos_profile = rmw_qos_profile_default;
 
-  /* Start for MATLABSystem: '<S56>/SinkBlock' */
+  /* Start for MATLABSystem: '<S55>/SinkBlock' */
   deadline.sec = 0.0;
   deadline.nsec = 0.0;
   lifespan.sec = 0.0;
@@ -583,7 +583,7 @@ void rover_sw_pwrtrain_24b::ro_Publisher_setupImpl_mygou5bo(const
                  RMW_QOS_POLICY_LIVELINESS_AUTOMATIC, liveliness_lease_duration,
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 31; i++) {
-    /* Start for MATLABSystem: '<S56>/SinkBlock' */
+    /* Start for MATLABSystem: '<S55>/SinkBlock' */
     rover_sw_pwrtrain_24b_B.b_zeroDelimTopic[i] = b_zeroDelimTopic[i];
   }
 
@@ -601,7 +601,7 @@ void rover_sw_pwrtrain_24b::r_Publisher_setupImpl_mygou5bow(const
   static const char_T b_zeroDelimTopic[24] = "vesc/telemetry/voltages";
   qos_profile = rmw_qos_profile_default;
 
-  /* Start for MATLABSystem: '<S57>/SinkBlock' */
+  /* Start for MATLABSystem: '<S56>/SinkBlock' */
   deadline.sec = 0.0;
   deadline.nsec = 0.0;
   lifespan.sec = 0.0;
@@ -614,12 +614,12 @@ void rover_sw_pwrtrain_24b::r_Publisher_setupImpl_mygou5bow(const
                  RMW_QOS_POLICY_LIVELINESS_AUTOMATIC, liveliness_lease_duration,
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 24; i++) {
-    /* Start for MATLABSystem: '<S57>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cv[i] = b_zeroDelimTopic[i];
+    /* Start for MATLABSystem: '<S56>/SinkBlock' */
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_p[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_822.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cv[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_p[0], qos_profile);
 }
 
 void rover_sw_pwrtrain_24b::Publisher_setupImpl_mygou5bowb(const
@@ -632,7 +632,7 @@ void rover_sw_pwrtrain_24b::Publisher_setupImpl_mygou5bowb(const
   static const char_T b_zeroDelimTopic[27] = "vesc/telemetry/voltage_one";
   qos_profile = rmw_qos_profile_default;
 
-  /* Start for MATLABSystem: '<S58>/SinkBlock' */
+  /* Start for MATLABSystem: '<S57>/SinkBlock' */
   deadline.sec = 0.0;
   deadline.nsec = 0.0;
   lifespan.sec = 0.0;
@@ -645,12 +645,12 @@ void rover_sw_pwrtrain_24b::Publisher_setupImpl_mygou5bowb(const
                  RMW_QOS_POLICY_LIVELINESS_AUTOMATIC, liveliness_lease_duration,
                  (bool)obj->QOSAvoidROSNamespaceConventions);
   for (int32_T i = 0; i < 27; i++) {
-    /* Start for MATLABSystem: '<S58>/SinkBlock' */
-    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cx[i] = b_zeroDelimTopic[i];
+    /* Start for MATLABSystem: '<S57>/SinkBlock' */
+    rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_k[i] = b_zeroDelimTopic[i];
   }
 
   Pub_rover_sw_pwrtrain_24b_835.createPublisher
-    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_cx[0], qos_profile);
+    (&rover_sw_pwrtrain_24b_B.b_zeroDelimTopic_k[0], qos_profile);
 }
 
 real_T rover_sw_pwrtrain_24b::rover_sw_pwrtrain_24b_norm(const real_T x[2])
@@ -682,7 +682,29 @@ real_T rover_sw_pwrtrain_24b::rover_sw_pwrtrain_24b_norm(const real_T x[2])
     y += rover_sw_pwrtrain_24b_B.t * rover_sw_pwrtrain_24b_B.t;
   }
 
-  return rover_sw_pwrtrain_24b_B.scale * sqrt(y);
+  y = rover_sw_pwrtrain_24b_B.scale * sqrt(y);
+
+  /* Start for MATLABSystem: '<S25>/Pure Pursuit' */
+  if (rtIsNaN(y)) {
+    int32_T c_k;
+    c_k = 0;
+    int32_T exitg1;
+    do {
+      exitg1 = 0;
+      if (c_k < 2) {
+        if (rtIsNaN(x[c_k])) {
+          exitg1 = 1;
+        } else {
+          c_k++;
+        }
+      } else {
+        y = (rtInf);
+        exitg1 = 1;
+      }
+    } while (exitg1 == 0);
+  }
+
+  return y;
 }
 
 real_T rover_sw_pwrtrain_24b::rover_sw_pwr_closestPointOnLine(const real_T pt1[2],
@@ -722,13 +744,13 @@ real_T rover_sw_pwrtrain_24b::rover_sw_pwr_closestPointOnLine(const real_T pt1[2
     rover_sw_pwrtrain_24b_B.alpha = pt2[0] - pt1[0];
     rover_sw_pwrtrain_24b_B.v12 = (pt2[0] - refPt[0]) *
       rover_sw_pwrtrain_24b_B.alpha;
-    rover_sw_pwrtrain_24b_B.v12_l = rover_sw_pwrtrain_24b_B.alpha *
+    rover_sw_pwrtrain_24b_B.v12_d = rover_sw_pwrtrain_24b_B.alpha *
       rover_sw_pwrtrain_24b_B.alpha;
     rover_sw_pwrtrain_24b_B.alpha = pt2[1] - pt1[1];
     rover_sw_pwrtrain_24b_B.alpha = ((pt2[1] - refPt[1]) *
       rover_sw_pwrtrain_24b_B.alpha + rover_sw_pwrtrain_24b_B.v12) /
       (rover_sw_pwrtrain_24b_B.alpha * rover_sw_pwrtrain_24b_B.alpha +
-       rover_sw_pwrtrain_24b_B.v12_l);
+       rover_sw_pwrtrain_24b_B.v12_d);
     if (rover_sw_pwrtrain_24b_B.alpha > 1.0) {
       pt2[0] = pt1[0];
       pt2[1] = pt1[1];
@@ -792,27 +814,26 @@ void rover_sw_pwrtrain_24b::step()
   SL_Bus_std_msgs_Float32 rtb_SourceBlock_o2_p;
   SL_Bus_std_msgs_Float32 rtb_SourceBlock_o2_m;
   SL_Bus_std_msgs_Bool rtb_SourceBlock_o2_l_0;
-  boolean_T forwardUp;
+  boolean_T searchFlag;
   static const char_T a[23] = { 'W', 'h', 'e', 'e', 'l', 'S', 'p', 'e', 'e', 'd',
     's', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-' };
 
   static const char_T a_0[23] = { 'V', 'e', 'h', 'i', 'c', 'l', 'e', 'S', 'p',
     'e', 'e', 'd', 'H', 'e', 'a', 'd', 'i', 'n', 'g', 'R', 'a', 't', 'e' };
 
-  SL_Bus_std_msgs_Float32 rtb_BusAssignment1_f;
-  SL_Bus_std_msgs_Float32 rtb_BusAssignment2_kf;
+  SL_Bus_std_msgs_Float32 rtb_BusAssignment1_a5;
+  SL_Bus_std_msgs_Float32 rtb_BusAssignment2_h;
   SL_Bus_std_msgs_Int32 rtb_BusAssignment1;
-  SL_Bus_std_msgs_Int32 rtb_BusAssignment1_e;
-  SL_Bus_std_msgs_Int32 rtb_BusAssignment2;
-  SL_Bus_std_msgs_Int32 rtb_BusAssignment2_g;
+  SL_Bus_std_msgs_Int32 rtb_BusAssignment1_j;
+  SL_Bus_std_msgs_Int32 rtb_BusAssignment2_f;
   SL_Bus_std_msgs_Int32 rtb_BusAssignment5;
   int32_T tmp_0;
+  int32_T tmp_size_idx_0;
+  int32_T trueCount;
   int8_T rtAction;
   boolean_T exitg1;
-  boolean_T exitg2;
   boolean_T rtb_OR;
   boolean_T tmp;
-  collision_flt rtb_Switch_i;
   if (rtmIsMajorTimeStep((&rover_sw_pwrtrain_24b_M))) {
     /* set solver stop time */
     if (!((&rover_sw_pwrtrain_24b_M)->Timing.clockTick0+1)) {
@@ -907,16 +928,17 @@ void rover_sw_pwrtrain_24b::step()
     /* BusAssignment: '<S3>/Bus Assignment2' incorporates:
      *  MATLAB Function: '<S27>/MATLAB Function'
      */
-    rtb_BusAssignment2.data = 0;
+    rover_sw_pwrtrain_24b_B.BusAssignment2.data = 0;
     get_telemetry_wrapper(&rover_sw_pwrtrain_24b_B.voltages[0],
                           &rover_sw_pwrtrain_24b_B.current_motor[0],
                           &rover_sw_pwrtrain_24b_B.current_battery[0],
                           &rover_sw_pwrtrain_24b_B.rpm[0],
                           &rover_sw_pwrtrain_24b_B.fault_codes[0],
-                          &rtb_BusAssignment2.data);
+                          &rover_sw_pwrtrain_24b_B.BusAssignment2.data);
 
     /* MATLABSystem: '<S11>/SinkBlock' */
-    Pub_rover_sw_pwrtrain_24b_826.publish(&rtb_BusAssignment2);
+    Pub_rover_sw_pwrtrain_24b_826.publish
+      (&rover_sw_pwrtrain_24b_B.BusAssignment2);
 
     /* MATLABSystem: '<S16>/SourceBlock' */
     rover_sw_pwrtrain_24b_B.SourceBlock_o1_m =
@@ -962,27 +984,27 @@ void rover_sw_pwrtrain_24b::step()
      *  Switch: '<S30>/Switch1'
      */
     if (rover_sw_pwrtrain_24b_B.Add <= 50.0) {
-      rtb_Switch_i = MILD;
+      rover_sw_pwrtrain_24b_B.Switch_b = MILD;
     } else if (rover_sw_pwrtrain_24b_B.Add <= 80.0) {
       /* Switch: '<S30>/Switch1' incorporates:
        *  Constant: '<S30>/Constant1'
        */
-      rtb_Switch_i = SEVERE;
+      rover_sw_pwrtrain_24b_B.Switch_b = SEVERE;
     } else {
-      rtb_Switch_i = NONE;
+      rover_sw_pwrtrain_24b_B.Switch_b = NONE;
     }
 
     /* End of Switch: '<S30>/Switch' */
 
     /* MATLABSystem: '<S17>/SourceBlock' */
-    forwardUp = Sub_rover_sw_pwrtrain_24b_521.getLatestMessage
+    searchFlag = Sub_rover_sw_pwrtrain_24b_521.getLatestMessage
       (&rtb_SourceBlock_o2_l_0);
 
     /* Logic: '<S4>/OR' incorporates:
      *  MATLABSystem: '<S17>/SourceBlock'
      * */
     rtb_OR = (rover_sw_pwrtrain_24b_B.SourceBlock_o1_mk ||
-              rover_sw_pwrtrain_24b_B.SourceBlock_o1_n || forwardUp);
+              rover_sw_pwrtrain_24b_B.SourceBlock_o1_n || searchFlag);
 
     /* Chart: '<S35>/adaptive_throttle_contller' incorporates:
      *  Constant: '<S35>/Constant'
@@ -994,7 +1016,7 @@ void rover_sw_pwrtrain_24b::step()
 
     if (rover_sw_pwrtrain_24b_DW.is_active_c3_rover_sw_pwrtrain_ == 0) {
       rover_sw_pwrtrain_24b_DW.is_active_c3_rover_sw_pwrtrain_ = 1U;
-      if (rtb_Switch_i != NONE) {
+      if (rover_sw_pwrtrain_24b_B.Switch_b != NONE) {
         rover_sw_pwrtrain_24b_DW.temporalCounter_i1 = 0U;
         rover_sw_pwrtrain_24b_DW.is_c3_rover_sw_pwrtrain_24b =
           rove_IN_COLLISION_FLT_FAST_STOP;
@@ -1025,7 +1047,7 @@ void rover_sw_pwrtrain_24b::step()
       switch (rover_sw_pwrtrain_24b_DW.is_c3_rover_sw_pwrtrain_24b) {
        case rove_IN_COLLISION_FLT_FAST_STOP:
         if (((rover_sw_pwrtrain_24b_DW.temporalCounter_i1 >= 1000) &&
-             (rtb_Switch_i == NONE)) ||
+             (rover_sw_pwrtrain_24b_B.Switch_b == NONE)) ||
             (rover_sw_pwrtrain_24b_B.EnabledSubsystem.In1.data <= -0.1)) {
           rover_sw_pwrtrain_24b_DW.is_COLLISION_FLT_FAST_STOP =
             rover_sw_pwr_IN_NO_ACTIVE_CHILD;
@@ -1085,7 +1107,7 @@ void rover_sw_pwrtrain_24b::step()
         break;
 
        case rover_sw_IN_LOST_COMM_OPERATION:
-        if ((rtb_Switch_i != NONE) && rtb_OR) {
+        if ((rover_sw_pwrtrain_24b_B.Switch_b != NONE) && rtb_OR) {
           rover_sw_pwrtrain_24b_DW.is_LOST_COMM_OPERATION =
             rover_sw_pwr_IN_NO_ACTIVE_CHILD;
           rover_sw_pwrtrain_24b_DW.temporalCounter_i1 = 0U;
@@ -1133,7 +1155,7 @@ void rover_sw_pwrtrain_24b::step()
 
        default:
         /* case IN_NORMAL_OPERATION: */
-        if (rtb_Switch_i != NONE) {
+        if (rover_sw_pwrtrain_24b_B.Switch_b != NONE) {
           rover_sw_pwrtrain_24b_DW.is_NORMAL_OPERATION =
             rover_sw_pwr_IN_NO_ACTIVE_CHILD;
           rover_sw_pwrtrain_24b_DW.temporalCounter_i1 = 0U;
@@ -1233,153 +1255,12 @@ void rover_sw_pwrtrain_24b::step()
      *  EnablePort: '<S21>/Enable'
      */
     /* Start for MATLABSystem: '<S17>/SourceBlock' */
-    if (forwardUp) {
+    if (searchFlag) {
       /* SignalConversion generated from: '<S21>/In1' */
       rover_sw_pwrtrain_24b_B.In1 = rtb_SourceBlock_o2_l_0;
     }
 
     /* End of Outputs for SubSystem: '<S17>/Enabled Subsystem' */
-
-    /* MATLAB Function: '<S26>/MATLAB Function1' incorporates:
-     *  Constant: '<S26>/Constant1'
-     */
-    rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0] = 10000;
-    rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1] = 2;
-    memset(&rover_sw_pwrtrain_24b_B.waypoints_m[0], 0, 20000U * sizeof(real_T));
-    rover_sw_pwrtrain_24b_B.ret = 1;
-    rover_sw_pwrtrain_24b_B.Add = 0.0;
-    rover_sw_pwrtrain_24b_B.y = 0.0;
-    rover_sw_pwrtrain_24b_B.waypoints_m[0] = 0.0;
-    rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[
-      0]] = 0.0;
-    rover_sw_pwrtrain_24b_B.laneX.set_size(1, 16);
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 16;
-         rover_sw_pwrtrain_24b_B.i_d++) {
-      rover_sw_pwrtrain_24b_B.targetX = rover_sw_pwrtrain_24b_B.i_d * 100;
-      if (rover_sw_pwrtrain_24b_B.targetX <= 1400) {
-        rover_sw_pwrtrain_24b_B.laneX[rover_sw_pwrtrain_24b_B.i_d] =
-          static_cast<int16_T>(rover_sw_pwrtrain_24b_B.targetX);
-      } else {
-        rover_sw_pwrtrain_24b_B.laneX[rover_sw_pwrtrain_24b_B.i_d] = 1400;
-      }
-    }
-
-    forwardUp = true;
-    rover_sw_pwrtrain_24b_B.i_d = 0;
-    exitg1 = false;
-    while ((!exitg1) && (rover_sw_pwrtrain_24b_B.i_d <= 15)) {
-      rover_sw_pwrtrain_24b_B.targetX =
-        rover_sw_pwrtrain_24b_B.laneX[rover_sw_pwrtrain_24b_B.i_d];
-      exitg2 = false;
-      while ((!exitg2) && (rover_sw_pwrtrain_24b_B.Add !=
-                           rover_sw_pwrtrain_24b_B.targetX)) {
-        if (rover_sw_pwrtrain_24b_B.targetX > rover_sw_pwrtrain_24b_B.Add) {
-          rover_sw_pwrtrain_24b_B.Add += 100.0;
-          if (rover_sw_pwrtrain_24b_B.Add > rover_sw_pwrtrain_24b_B.targetX) {
-            rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.targetX;
-          }
-        } else {
-          rover_sw_pwrtrain_24b_B.Add -= 100.0;
-          if (rover_sw_pwrtrain_24b_B.Add < rover_sw_pwrtrain_24b_B.targetX) {
-            rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.targetX;
-          }
-        }
-
-        rover_sw_pwrtrain_24b_B.ret++;
-        if (rover_sw_pwrtrain_24b_B.ret > 10000) {
-          exitg2 = true;
-        } else {
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.ret - 1] =
-            rover_sw_pwrtrain_24b_B.Add;
-          rover_sw_pwrtrain_24b_B.waypoints_m[(rover_sw_pwrtrain_24b_B.ret +
-            rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]) - 1] =
-            rover_sw_pwrtrain_24b_B.y;
-        }
-      }
-
-      if (rover_sw_pwrtrain_24b_B.ret > 10000) {
-        exitg1 = true;
-      } else {
-        if (forwardUp) {
-          rover_sw_pwrtrain_24b_B.targetX = 5700;
-        } else {
-          rover_sw_pwrtrain_24b_B.targetX = 0;
-        }
-
-        exitg2 = false;
-        while ((!exitg2) && (rover_sw_pwrtrain_24b_B.y !=
-                             rover_sw_pwrtrain_24b_B.targetX)) {
-          if (rover_sw_pwrtrain_24b_B.targetX > rover_sw_pwrtrain_24b_B.y) {
-            rover_sw_pwrtrain_24b_B.y += 200.0;
-            if (rover_sw_pwrtrain_24b_B.y > rover_sw_pwrtrain_24b_B.targetX) {
-              rover_sw_pwrtrain_24b_B.y = rover_sw_pwrtrain_24b_B.targetX;
-            }
-          } else {
-            rover_sw_pwrtrain_24b_B.y -= 200.0;
-            if (rover_sw_pwrtrain_24b_B.y < rover_sw_pwrtrain_24b_B.targetX) {
-              rover_sw_pwrtrain_24b_B.y = rover_sw_pwrtrain_24b_B.targetX;
-            }
-          }
-
-          rover_sw_pwrtrain_24b_B.ret++;
-          if (rover_sw_pwrtrain_24b_B.ret > 10000) {
-            exitg2 = true;
-          } else {
-            rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.ret - 1]
-              = rover_sw_pwrtrain_24b_B.Add;
-            rover_sw_pwrtrain_24b_B.waypoints_m[(rover_sw_pwrtrain_24b_B.ret +
-              rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]) - 1] =
-              rover_sw_pwrtrain_24b_B.y;
-          }
-        }
-
-        forwardUp = !forwardUp;
-        if (rover_sw_pwrtrain_24b_B.ret > 10000) {
-          exitg1 = true;
-        } else {
-          rover_sw_pwrtrain_24b_B.i_d++;
-        }
-      }
-    }
-
-    while ((rover_sw_pwrtrain_24b_B.y > 0.0) && (rover_sw_pwrtrain_24b_B.ret <
-            10000)) {
-      rover_sw_pwrtrain_24b_B.y -= 200.0;
-      if (rover_sw_pwrtrain_24b_B.y < 0.0) {
-        rover_sw_pwrtrain_24b_B.y = 0.0;
-      }
-
-      rover_sw_pwrtrain_24b_B.ret++;
-      rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.ret - 1] =
-        rover_sw_pwrtrain_24b_B.Add;
-      rover_sw_pwrtrain_24b_B.waypoints_m[(rover_sw_pwrtrain_24b_B.ret +
-        rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]) - 1] =
-        rover_sw_pwrtrain_24b_B.y;
-    }
-
-    while ((rover_sw_pwrtrain_24b_B.Add != 0.0) && (rover_sw_pwrtrain_24b_B.ret <
-            10000)) {
-      if (rover_sw_pwrtrain_24b_B.Add > 0.0) {
-        rover_sw_pwrtrain_24b_B.Add -= 100.0;
-        if (rover_sw_pwrtrain_24b_B.Add < 0.0) {
-          rover_sw_pwrtrain_24b_B.Add = 0.0;
-        }
-      } else {
-        rover_sw_pwrtrain_24b_B.Add += 100.0;
-        if (rover_sw_pwrtrain_24b_B.Add > 0.0) {
-          rover_sw_pwrtrain_24b_B.Add = 0.0;
-        }
-      }
-
-      rover_sw_pwrtrain_24b_B.ret++;
-      rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.ret - 1] =
-        rover_sw_pwrtrain_24b_B.Add;
-      rover_sw_pwrtrain_24b_B.waypoints_m[(rover_sw_pwrtrain_24b_B.ret +
-        rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]) - 1] =
-        rover_sw_pwrtrain_24b_B.y;
-    }
-
-    /* End of MATLAB Function: '<S26>/MATLAB Function1' */
   }
 
   /* Integrator: '<S47>/Integrator' */
@@ -1390,7 +1271,9 @@ void rover_sw_pwrtrain_24b::step()
   rover_sw_pwrtrain_24b_B.Integrator[2] =
     rover_sw_pwrtrain_24b_X.Integrator_CSTATE[2];
   if (tmp) {
-    /* MATLABSystem: '<S25>/Pure Pursuit' */
+    /* MATLABSystem: '<S25>/Pure Pursuit' incorporates:
+     *  Constant: '<S26>/Constant4'
+     */
     if (rover_sw_pwrtrain_24b_DW.obj.DesiredLinearVelocity != 0.5) {
       rover_sw_pwrtrain_24b_DW.obj.DesiredLinearVelocity = 0.5;
     }
@@ -1403,107 +1286,18 @@ void rover_sw_pwrtrain_24b::step()
       rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance = 0.1;
     }
 
-    if (!rover_sw_pwrtrain_24b_DW.obj.CacheInputSizes) {
-      rover_sw_pwrtrain_24b_DW.obj.CacheInputSizes = true;
-      for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 8;
-           rover_sw_pwrtrain_24b_B.i_d++) {
-        rover_sw_pwrtrain_24b_DW.obj.inputVarSize[0]
-          .f1[rover_sw_pwrtrain_24b_B.i_d] = 1U;
-      }
-
-      rover_sw_pwrtrain_24b_B.i_d = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0];
-      if (rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0] < 0) {
-        rover_sw_pwrtrain_24b_B.i_d = 0;
-      }
-
-      rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1].f1[0] = static_cast<uint32_T>
-        (rover_sw_pwrtrain_24b_B.i_d);
-      rover_sw_pwrtrain_24b_B.i_d = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1];
-      if (rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1] < 0) {
-        rover_sw_pwrtrain_24b_B.i_d = 0;
-      }
-
-      rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1].f1[1] = static_cast<uint32_T>
-        (rover_sw_pwrtrain_24b_B.i_d);
-      for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 6;
-           rover_sw_pwrtrain_24b_B.i_d++) {
-        rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1]
-          .f1[rover_sw_pwrtrain_24b_B.i_d + 2] = 1U;
-      }
-    }
-
-    /* Start for MATLABSystem: '<S25>/Pure Pursuit' */
-    rover_sw_pwrtrain_24b_B.i_d = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0];
-    if (rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0] < 0) {
-      rover_sw_pwrtrain_24b_B.i_d = 0;
-    }
-
-    /* MATLABSystem: '<S25>/Pure Pursuit' */
-    rover_sw_pwrtrain_24b_B.inSize[0] = static_cast<uint32_T>
-      (rover_sw_pwrtrain_24b_B.i_d);
-
-    /* Start for MATLABSystem: '<S25>/Pure Pursuit' */
-    rover_sw_pwrtrain_24b_B.i_d = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1];
-    if (rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1] < 0) {
-      rover_sw_pwrtrain_24b_B.i_d = 0;
-    }
-
-    /* MATLABSystem: '<S25>/Pure Pursuit' */
-    rover_sw_pwrtrain_24b_B.inSize[1] = static_cast<uint32_T>
-      (rover_sw_pwrtrain_24b_B.i_d);
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 6;
-         rover_sw_pwrtrain_24b_B.i_d++) {
-      rover_sw_pwrtrain_24b_B.inSize[rover_sw_pwrtrain_24b_B.i_d + 2] = 1U;
-    }
-
-    rover_sw_pwrtrain_24b_B.ret = 0;
-    exitg1 = false;
-    while ((!exitg1) && (rover_sw_pwrtrain_24b_B.ret < 8)) {
-      if (rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1]
-          .f1[rover_sw_pwrtrain_24b_B.ret] !=
-          rover_sw_pwrtrain_24b_B.inSize[rover_sw_pwrtrain_24b_B.ret]) {
-        for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 8;
-             rover_sw_pwrtrain_24b_B.i_d++) {
-          rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1]
-            .f1[rover_sw_pwrtrain_24b_B.i_d] =
-            rover_sw_pwrtrain_24b_B.inSize[rover_sw_pwrtrain_24b_B.i_d];
-        }
-
-        exitg1 = true;
-      } else {
-        rover_sw_pwrtrain_24b_B.ret++;
-      }
-    }
-
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 20000;
-         rover_sw_pwrtrain_24b_B.i_d++) {
-      rover_sw_pwrtrain_24b_B.paddedWaypts[rover_sw_pwrtrain_24b_B.i_d] = (rtNaN);
-    }
-
-    tmp_0 = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0];
-    rover_sw_pwrtrain_24b_B.ret = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0];
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d < 2;
-         rover_sw_pwrtrain_24b_B.i_d++) {
-      for (rover_sw_pwrtrain_24b_B.targetX = 0; rover_sw_pwrtrain_24b_B.targetX <
-           rover_sw_pwrtrain_24b_B.ret; rover_sw_pwrtrain_24b_B.targetX++) {
-        rover_sw_pwrtrain_24b_B.paddedWaypts[rover_sw_pwrtrain_24b_B.targetX +
-          10000 * rover_sw_pwrtrain_24b_B.i_d] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[tmp_0 *
-          rover_sw_pwrtrain_24b_B.i_d + rover_sw_pwrtrain_24b_B.targetX];
-      }
-    }
-
-    forwardUp = false;
+    searchFlag = false;
     rtb_OR = true;
     rover_sw_pwrtrain_24b_B.ret = 0;
     exitg1 = false;
-    while ((!exitg1) && (rover_sw_pwrtrain_24b_B.ret < 20000)) {
+    while ((!exitg1) && (rover_sw_pwrtrain_24b_B.ret < 1756)) {
       if ((rover_sw_pwrtrain_24b_DW.obj.WaypointsInternal[rover_sw_pwrtrain_24b_B.ret]
-           == rover_sw_pwrtrain_24b_B.paddedWaypts[rover_sw_pwrtrain_24b_B.ret])
+           ==
+           rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret])
           || (rtIsNaN
               (rover_sw_pwrtrain_24b_DW.obj.WaypointsInternal[rover_sw_pwrtrain_24b_B.ret])
               && rtIsNaN
-              (rover_sw_pwrtrain_24b_B.paddedWaypts[rover_sw_pwrtrain_24b_B.ret])))
+              (rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret])))
       {
         rover_sw_pwrtrain_24b_B.ret++;
       } else {
@@ -1513,164 +1307,161 @@ void rover_sw_pwrtrain_24b::step()
     }
 
     if (rtb_OR) {
-      forwardUp = true;
+      searchFlag = true;
     }
 
-    if (!forwardUp) {
+    if (!searchFlag) {
       memcpy(&rover_sw_pwrtrain_24b_DW.obj.WaypointsInternal[0],
-             &rover_sw_pwrtrain_24b_B.paddedWaypts[0], 20000U * sizeof(real_T));
+             &rover_sw_pwrtrain_24b_ConstP.Constant4_Value[0], 1756U * sizeof
+             (real_T));
       rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex = 0.0;
     }
 
-    rover_sw_pwrtrain_24b_B.ret = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0];
-    rover_sw_pwrtrain_24b_B.targetX = 0;
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d <
-         rover_sw_pwrtrain_24b_B.ret; rover_sw_pwrtrain_24b_B.i_d++) {
-      rover_sw_pwrtrain_24b_B.targetX++;
+    for (rover_sw_pwrtrain_24b_B.ret = 0; rover_sw_pwrtrain_24b_B.ret < 1756;
+         rover_sw_pwrtrain_24b_B.ret++) {
+      rover_sw_pwrtrain_24b_B.b[rover_sw_pwrtrain_24b_B.ret] = !rtIsNaN
+        (rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret]);
     }
 
-    tmp_0 = rover_sw_pwrtrain_24b_B.targetX;
-    rover_sw_pwrtrain_24b_B.targetX = 0;
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d <
-         rover_sw_pwrtrain_24b_B.ret; rover_sw_pwrtrain_24b_B.i_d++) {
-      /* MATLABSystem: '<S25>/Pure Pursuit' */
-      rover_sw_pwrtrain_24b_B.tmp_data[rover_sw_pwrtrain_24b_B.targetX] =
-        static_cast<int16_T>(rover_sw_pwrtrain_24b_B.i_d);
-      rover_sw_pwrtrain_24b_B.targetX++;
-    }
+    trueCount = 0;
 
-    /* MATLABSystem: '<S25>/Pure Pursuit' incorporates:
-     *  ZeroOrderHold: '<S25>/Zero-Order Hold2'
-     */
-    rover_sw_pwrtrain_24b_B.ret = rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1];
-    rover_sw_pwrtrain_24b_B.waypoints.set_size(tmp_0,
-      rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1]);
-    for (rover_sw_pwrtrain_24b_B.i_d = 0; rover_sw_pwrtrain_24b_B.i_d <
-         rover_sw_pwrtrain_24b_B.ret; rover_sw_pwrtrain_24b_B.i_d++) {
-      for (rover_sw_pwrtrain_24b_B.targetX = 0; rover_sw_pwrtrain_24b_B.targetX <
-           tmp_0; rover_sw_pwrtrain_24b_B.targetX++) {
-        rover_sw_pwrtrain_24b_B.waypoints[rover_sw_pwrtrain_24b_B.targetX +
-          rover_sw_pwrtrain_24b_B.waypoints.size(0) *
-          rover_sw_pwrtrain_24b_B.i_d] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_DW.SFunction_DIMS2
-          [0] * rover_sw_pwrtrain_24b_B.i_d +
-          rover_sw_pwrtrain_24b_B.tmp_data[rover_sw_pwrtrain_24b_B.targetX]];
+    /* MATLABSystem: '<S25>/Pure Pursuit' */
+    for (rover_sw_pwrtrain_24b_B.ret = 0; rover_sw_pwrtrain_24b_B.ret < 878;
+         rover_sw_pwrtrain_24b_B.ret++) {
+      searchFlag = (rover_sw_pwrtrain_24b_B.b[rover_sw_pwrtrain_24b_B.ret] &&
+                    rover_sw_pwrtrain_24b_B.b[rover_sw_pwrtrain_24b_B.ret + 878]);
+      rover_sw_pwrtrain_24b_B.bv[rover_sw_pwrtrain_24b_B.ret] = searchFlag;
+      if (searchFlag) {
+        trueCount++;
       }
     }
 
-    if ((tmp_0 == 0) || (rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[1] == 0)) {
+    tmp_size_idx_0 = trueCount;
+    trueCount = 0;
+    for (rover_sw_pwrtrain_24b_B.ret = 0; rover_sw_pwrtrain_24b_B.ret < 878;
+         rover_sw_pwrtrain_24b_B.ret++) {
+      /* MATLABSystem: '<S25>/Pure Pursuit' */
+      if (rover_sw_pwrtrain_24b_B.bv[rover_sw_pwrtrain_24b_B.ret]) {
+        /* Start for MATLABSystem: '<S25>/Pure Pursuit' */
+        rover_sw_pwrtrain_24b_B.tmp_data[trueCount] = static_cast<int16_T>
+          (rover_sw_pwrtrain_24b_B.ret);
+        trueCount++;
+      }
+    }
+
+    /* MATLABSystem: '<S25>/Pure Pursuit' incorporates:
+     *  Constant: '<S26>/Constant4'
+     *  ZeroOrderHold: '<S25>/Zero-Order Hold2'
+     */
+    if (tmp_size_idx_0 == 0) {
       /* Product: '<S48>/Product' */
       rover_sw_pwrtrain_24b_B.Product = 0.0;
       rover_sw_pwrtrain_24b_B.Product1 = 0.0;
     } else {
-      forwardUp = false;
+      searchFlag = false;
       if (rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex == 0.0) {
-        forwardUp = true;
+        searchFlag = true;
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[0]];
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [0]];
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[0]
-          + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [0] + 878];
         rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex = 1.0;
       }
 
-      if (tmp_0 == 1) {
-        rover_sw_pwrtrain_24b_B.Add =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[0]];
+      if (tmp_size_idx_0 == 1) {
+        rover_sw_pwrtrain_24b_B.minDistance =
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [0]];
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0] =
-          rover_sw_pwrtrain_24b_B.Add;
-        rover_sw_pwrtrain_24b_B.y =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[0]
-          + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
+          rover_sw_pwrtrain_24b_B.minDistance;
+        rover_sw_pwrtrain_24b_B.Add =
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [0] + 878];
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1] =
-          rover_sw_pwrtrain_24b_B.y;
-        rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0] =
           rover_sw_pwrtrain_24b_B.Add;
+        rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0] =
+          rover_sw_pwrtrain_24b_B.minDistance;
         rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[1] =
-          rover_sw_pwrtrain_24b_B.y;
+          rover_sw_pwrtrain_24b_B.Add;
       } else {
         rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
           + 1.0) - 1]];
         rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
-          + 1.0) - 1] + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
-        rover_sw_pwrtrain_24b_B.y = rover_sw_pwr_closestPointOnLine
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          + 1.0) - 1] + 878];
+        rover_sw_pwrtrain_24b_B.minDistance = rover_sw_pwr_closestPointOnLine
           (rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint,
            rover_sw_pwrtrain_24b_B.lookaheadStartPt,
            &rover_sw_pwrtrain_24b_B.Integrator[0]);
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[0];
-        rover_sw_pwrtrain_24b_B.waypoints_j[0] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[0] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] -
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
           + 1.0) - 1]];
         rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[1];
-        rover_sw_pwrtrain_24b_B.waypoints_j[1] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[1] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] -
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
-          + 1.0) - 1] + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          + 1.0) - 1] + 878];
         rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_norm
-          (rover_sw_pwrtrain_24b_B.waypoints_j);
-        rover_sw_pwrtrain_24b_B.overshootDist =
+          (rover_sw_pwrtrain_24b_B.lookaheadStartPt_l);
+        rover_sw_pwrtrain_24b_B.lookaheadIdx =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex + 1.0;
-        rover_sw_pwrtrain_24b_B.ret = static_cast<int32_T>((1.0 -
+        trueCount = static_cast<int32_T>((1.0 -
           (rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex + 1.0)) + (
-          static_cast<real_T>(tmp_0) - 1.0)) - 1;
-        rover_sw_pwrtrain_24b_B.i_d = 0;
+          static_cast<real_T>(tmp_size_idx_0) - 1.0)) - 1;
+        rover_sw_pwrtrain_24b_B.b_i = 0;
         exitg1 = false;
-        while ((!exitg1) && (rover_sw_pwrtrain_24b_B.i_d <=
-                             rover_sw_pwrtrain_24b_B.ret)) {
-          rover_sw_pwrtrain_24b_B.i = rover_sw_pwrtrain_24b_B.overshootDist +
-            static_cast<real_T>(rover_sw_pwrtrain_24b_B.i_d);
-          if ((!forwardUp) && (rover_sw_pwrtrain_24b_B.Add >
-                               rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance))
+        while ((!exitg1) && (rover_sw_pwrtrain_24b_B.b_i <= trueCount)) {
+          rover_sw_pwrtrain_24b_B.i = rover_sw_pwrtrain_24b_B.lookaheadIdx +
+            static_cast<real_T>(rover_sw_pwrtrain_24b_B.b_i);
+          if ((!searchFlag) && (rover_sw_pwrtrain_24b_B.Add >
+                                rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance))
           {
             exitg1 = true;
           } else {
-            rover_sw_pwrtrain_24b_B.waypoints_tmp =
-              rover_sw_pwrtrain_24b_B.waypoints[static_cast<int32_T>
-              (rover_sw_pwrtrain_24b_B.i + 1.0) - 1];
-            rover_sw_pwrtrain_24b_B.waypoints_tmp_g =
-              rover_sw_pwrtrain_24b_B.waypoints[static_cast<int32_T>
+            rover_sw_pwrtrain_24b_B.ret = rover_sw_pwrtrain_24b_B.tmp_data[
+              static_cast<int32_T>(rover_sw_pwrtrain_24b_B.i + 1.0) - 1];
+            tmp_0 = rover_sw_pwrtrain_24b_B.tmp_data[static_cast<int32_T>
               (rover_sw_pwrtrain_24b_B.i) - 1];
-            rover_sw_pwrtrain_24b_B.waypoints_j[0] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp_g -
-              rover_sw_pwrtrain_24b_B.waypoints_tmp;
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[0] =
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[tmp_0] -
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret];
             rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp;
-            rover_sw_pwrtrain_24b_B.waypoints_d[0] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp_g;
-            rover_sw_pwrtrain_24b_B.waypoints_tmp =
-              rover_sw_pwrtrain_24b_B.waypoints[(static_cast<int32_T>
-              (rover_sw_pwrtrain_24b_B.i + 1.0) +
-              rover_sw_pwrtrain_24b_B.waypoints.size(0)) - 1];
-            rover_sw_pwrtrain_24b_B.waypoints_tmp_g =
-              rover_sw_pwrtrain_24b_B.waypoints[(static_cast<int32_T>
-              (rover_sw_pwrtrain_24b_B.i) +
-              rover_sw_pwrtrain_24b_B.waypoints.size(0)) - 1];
-            rover_sw_pwrtrain_24b_B.waypoints_j[1] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp_g -
-              rover_sw_pwrtrain_24b_B.waypoints_tmp;
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret];
+            rover_sw_pwrtrain_24b_B.dv[0] =
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[tmp_0];
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp =
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret
+              + 878];
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp_j =
+              rover_sw_pwrtrain_24b_ConstP.Constant4_Value[tmp_0 + 878];
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[1] =
+              rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp_j -
+              rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp;
             rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp;
-            rover_sw_pwrtrain_24b_B.waypoints_d[1] =
-              rover_sw_pwrtrain_24b_B.waypoints_tmp_g;
+              rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp;
+            rover_sw_pwrtrain_24b_B.dv[1] =
+              rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp_j;
             rover_sw_pwrtrain_24b_B.Add += rover_sw_pwrtrain_24b_norm
-              (rover_sw_pwrtrain_24b_B.waypoints_j);
-            rover_sw_pwrtrain_24b_B.waypoints_tmp =
-              rover_sw_pwr_closestPointOnLine
-              (rover_sw_pwrtrain_24b_B.waypoints_d,
-               rover_sw_pwrtrain_24b_B.lookaheadStartPt,
-               &rover_sw_pwrtrain_24b_B.Integrator[0]);
-            if (rover_sw_pwrtrain_24b_B.waypoints_tmp <
-                rover_sw_pwrtrain_24b_B.y) {
-              rover_sw_pwrtrain_24b_B.y = rover_sw_pwrtrain_24b_B.waypoints_tmp;
+              (rover_sw_pwrtrain_24b_B.lookaheadStartPt_l);
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp =
+              rover_sw_pwr_closestPointOnLine(rover_sw_pwrtrain_24b_B.dv,
+              rover_sw_pwrtrain_24b_B.lookaheadStartPt,
+              &rover_sw_pwrtrain_24b_B.Integrator[0]);
+            if (rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp <
+                rover_sw_pwrtrain_24b_B.minDistance) {
+              rover_sw_pwrtrain_24b_B.minDistance =
+                rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp;
               rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0] =
                 rover_sw_pwrtrain_24b_B.lookaheadStartPt[0];
               rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1] =
@@ -1679,79 +1470,79 @@ void rover_sw_pwrtrain_24b::step()
                 rover_sw_pwrtrain_24b_B.i;
             }
 
-            rover_sw_pwrtrain_24b_B.i_d++;
+            rover_sw_pwrtrain_24b_B.b_i++;
           }
         }
 
-        rover_sw_pwrtrain_24b_B.waypoints_j[0] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[0] =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0] -
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
           + 1.0) - 1]];
-        rover_sw_pwrtrain_24b_B.waypoints_j[1] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[1] =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1] -
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
-          + 1.0) - 1] + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          + 1.0) - 1] + 878];
         rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_norm
-          (rover_sw_pwrtrain_24b_B.waypoints_j);
+          (rover_sw_pwrtrain_24b_B.lookaheadStartPt_l);
         rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[0];
         rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
           + 1.0) - 1]];
         rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionPoint[1];
         rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[1] =
-          rover_sw_pwrtrain_24b_B.waypoints_m[rover_sw_pwrtrain_24b_B.tmp_data[
-          static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
-          + 1.0) - 1] + rover_sw_pwrtrain_24b_DW.SFunction_DIMS2[0]];
-        rover_sw_pwrtrain_24b_B.overshootDist = rover_sw_pwrtrain_24b_B.Add -
+          rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.tmp_data
+          [static_cast<int32_T>(rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex
+          + 1.0) - 1] + 878];
+        rover_sw_pwrtrain_24b_B.minDistance = rover_sw_pwrtrain_24b_B.Add -
           rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance;
-        rover_sw_pwrtrain_24b_B.y =
+        rover_sw_pwrtrain_24b_B.lookaheadIdx =
           rover_sw_pwrtrain_24b_DW.obj.ProjectionLineIndex;
-        while ((rover_sw_pwrtrain_24b_B.overshootDist < 0.0) &&
-               (rover_sw_pwrtrain_24b_B.y < static_cast<real_T>(tmp_0) - 1.0)) {
-          rover_sw_pwrtrain_24b_B.y++;
-          rover_sw_pwrtrain_24b_B.overshootDist =
-            rover_sw_pwrtrain_24b_B.waypoints[static_cast<int32_T>
-            (rover_sw_pwrtrain_24b_B.y) - 1];
+        while ((rover_sw_pwrtrain_24b_B.minDistance < 0.0) &&
+               (rover_sw_pwrtrain_24b_B.lookaheadIdx < static_cast<real_T>
+                (tmp_size_idx_0) - 1.0)) {
+          rover_sw_pwrtrain_24b_B.lookaheadIdx++;
+          trueCount = rover_sw_pwrtrain_24b_B.tmp_data[static_cast<int32_T>
+            (rover_sw_pwrtrain_24b_B.lookaheadIdx) - 1];
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] =
-            rover_sw_pwrtrain_24b_B.overshootDist;
-          rover_sw_pwrtrain_24b_B.i = rover_sw_pwrtrain_24b_B.waypoints[
-            static_cast<int32_T>(rover_sw_pwrtrain_24b_B.y + 1.0) - 1];
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[trueCount];
+          rover_sw_pwrtrain_24b_B.ret = rover_sw_pwrtrain_24b_B.tmp_data[
+            static_cast<int32_T>(rover_sw_pwrtrain_24b_B.lookaheadIdx + 1.0) - 1];
           rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0] =
-            rover_sw_pwrtrain_24b_B.i;
-          rover_sw_pwrtrain_24b_B.waypoints_j[0] =
-            rover_sw_pwrtrain_24b_B.overshootDist - rover_sw_pwrtrain_24b_B.i;
-          rover_sw_pwrtrain_24b_B.overshootDist =
-            rover_sw_pwrtrain_24b_B.waypoints[(static_cast<int32_T>
-            (rover_sw_pwrtrain_24b_B.y) + rover_sw_pwrtrain_24b_B.waypoints.size
-            (0)) - 1];
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret];
+          rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[0] =
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[trueCount] -
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret];
+          rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp =
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[trueCount + 878];
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] =
-            rover_sw_pwrtrain_24b_B.overshootDist;
-          rover_sw_pwrtrain_24b_B.i = rover_sw_pwrtrain_24b_B.waypoints[(
-            static_cast<int32_T>(rover_sw_pwrtrain_24b_B.y + 1.0) +
-            rover_sw_pwrtrain_24b_B.waypoints.size(0)) - 1];
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp;
+          rover_sw_pwrtrain_24b_B.minDistance =
+            rover_sw_pwrtrain_24b_ConstP.Constant4_Value[rover_sw_pwrtrain_24b_B.ret
+            + 878];
           rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[1] =
-            rover_sw_pwrtrain_24b_B.i;
-          rover_sw_pwrtrain_24b_B.waypoints_j[1] =
-            rover_sw_pwrtrain_24b_B.overshootDist - rover_sw_pwrtrain_24b_B.i;
+            rover_sw_pwrtrain_24b_B.minDistance;
+          rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[1] =
+            rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp -
+            rover_sw_pwrtrain_24b_B.minDistance;
           rover_sw_pwrtrain_24b_B.Add += rover_sw_pwrtrain_24b_norm
-            (rover_sw_pwrtrain_24b_B.waypoints_j);
-          rover_sw_pwrtrain_24b_B.overshootDist = rover_sw_pwrtrain_24b_B.Add -
+            (rover_sw_pwrtrain_24b_B.lookaheadStartPt_l);
+          rover_sw_pwrtrain_24b_B.minDistance = rover_sw_pwrtrain_24b_B.Add -
             rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance;
         }
 
-        rover_sw_pwrtrain_24b_B.waypoints_j[0] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[0] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] -
           rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0];
-        rover_sw_pwrtrain_24b_B.waypoints_j[1] =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt_l[1] =
           rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] -
           rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[1];
-        rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.overshootDist /
-          rover_sw_pwrtrain_24b_norm(rover_sw_pwrtrain_24b_B.waypoints_j);
+        rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.minDistance /
+          rover_sw_pwrtrain_24b_norm(rover_sw_pwrtrain_24b_B.lookaheadStartPt_l);
         if (rover_sw_pwrtrain_24b_B.Add > 0.0) {
           rover_sw_pwrtrain_24b_DW.obj.LookaheadPoint[0] = (1.0 -
             rover_sw_pwrtrain_24b_B.Add) *
@@ -1775,36 +1566,36 @@ void rover_sw_pwrtrain_24b::step()
       if (fabs(rover_sw_pwrtrain_24b_B.Add) > 3.1415926535897931) {
         if (rtIsNaN(rover_sw_pwrtrain_24b_B.Add + 3.1415926535897931) || rtIsInf
             (rover_sw_pwrtrain_24b_B.Add + 3.1415926535897931)) {
-          rover_sw_pwrtrain_24b_B.y = (rtNaN);
+          rover_sw_pwrtrain_24b_B.minDistance = (rtNaN);
         } else if (rover_sw_pwrtrain_24b_B.Add + 3.1415926535897931 == 0.0) {
-          rover_sw_pwrtrain_24b_B.y = 0.0;
+          rover_sw_pwrtrain_24b_B.minDistance = 0.0;
         } else {
-          rover_sw_pwrtrain_24b_B.y = fmod(rover_sw_pwrtrain_24b_B.Add +
-            3.1415926535897931, 6.2831853071795862);
-          forwardUp = (rover_sw_pwrtrain_24b_B.y == 0.0);
-          if (!forwardUp) {
-            rover_sw_pwrtrain_24b_B.overshootDist = fabs
+          rover_sw_pwrtrain_24b_B.minDistance = fmod(rover_sw_pwrtrain_24b_B.Add
+            + 3.1415926535897931, 6.2831853071795862);
+          searchFlag = (rover_sw_pwrtrain_24b_B.minDistance == 0.0);
+          if (!searchFlag) {
+            rover_sw_pwrtrain_24b_B.lookaheadIdx = fabs
               ((rover_sw_pwrtrain_24b_B.Add + 3.1415926535897931) /
                6.2831853071795862);
-            forwardUp = !(fabs(rover_sw_pwrtrain_24b_B.overshootDist - floor
-                               (rover_sw_pwrtrain_24b_B.overshootDist + 0.5)) >
-                          2.2204460492503131E-16 *
-                          rover_sw_pwrtrain_24b_B.overshootDist);
+            searchFlag = !(fabs(rover_sw_pwrtrain_24b_B.lookaheadIdx - floor
+                                (rover_sw_pwrtrain_24b_B.lookaheadIdx + 0.5)) >
+                           2.2204460492503131E-16 *
+                           rover_sw_pwrtrain_24b_B.lookaheadIdx);
           }
 
-          if (forwardUp) {
-            rover_sw_pwrtrain_24b_B.y = 0.0;
-          } else if (rover_sw_pwrtrain_24b_B.y < 0.0) {
-            rover_sw_pwrtrain_24b_B.y += 6.2831853071795862;
+          if (searchFlag) {
+            rover_sw_pwrtrain_24b_B.minDistance = 0.0;
+          } else if (rover_sw_pwrtrain_24b_B.minDistance < 0.0) {
+            rover_sw_pwrtrain_24b_B.minDistance += 6.2831853071795862;
           }
         }
 
-        if ((rover_sw_pwrtrain_24b_B.y == 0.0) && (rover_sw_pwrtrain_24b_B.Add +
-             3.1415926535897931 > 0.0)) {
-          rover_sw_pwrtrain_24b_B.y = 6.2831853071795862;
+        if ((rover_sw_pwrtrain_24b_B.minDistance == 0.0) &&
+            (rover_sw_pwrtrain_24b_B.Add + 3.1415926535897931 > 0.0)) {
+          rover_sw_pwrtrain_24b_B.minDistance = 6.2831853071795862;
         }
 
-        rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.y -
+        rover_sw_pwrtrain_24b_B.Add = rover_sw_pwrtrain_24b_B.minDistance -
           3.1415926535897931;
       }
 
@@ -1841,6 +1632,7 @@ void rover_sw_pwrtrain_24b::step()
       }
 
       /* Product: '<S48>/Product' incorporates:
+       *  Constant: '<S26>/Constant4'
        *  ZeroOrderHold: '<S25>/Zero-Order Hold2'
        */
       rover_sw_pwrtrain_24b_B.Product =
@@ -1871,26 +1663,26 @@ void rover_sw_pwrtrain_24b::step()
        *  Product: '<S45>/Product'
        *  Sum: '<S45>/Plus'
        */
-      rtb_BusAssignment1_e.data = vesc_send_duty_left
+      rtb_BusAssignment1_j.data = vesc_send_duty_left
         (rover_sw_pwrtrain_24b_B.throttle_out *
          rover_sw_pwrtrain_24b_B.EnabledSubsystem_o.In1.data +
          rover_sw_pwrtrain_24b_B.throttle_out);
 
       /* MATLABSystem: '<S43>/SinkBlock' */
-      Pub_rover_sw_pwrtrain_24b_138.publish(&rtb_BusAssignment1_e);
+      Pub_rover_sw_pwrtrain_24b_138.publish(&rtb_BusAssignment1_j);
 
       /* BusAssignment: '<S34>/Bus Assignment2' incorporates:
        *  CCaller: '<S45>/vesc_send_duty_right'
        *  Product: '<S45>/Product1'
        *  Sum: '<S45>/Plus2'
        */
-      rtb_BusAssignment2_g.data = vesc_send_duty_right
+      rtb_BusAssignment2_f.data = vesc_send_duty_right
         (rover_sw_pwrtrain_24b_B.throttle_out -
          rover_sw_pwrtrain_24b_B.throttle_out *
          rover_sw_pwrtrain_24b_B.EnabledSubsystem_o.In1.data);
 
       /* MATLABSystem: '<S44>/SinkBlock' */
-      Pub_rover_sw_pwrtrain_24b_139.publish(&rtb_BusAssignment2_g);
+      Pub_rover_sw_pwrtrain_24b_139.publish(&rtb_BusAssignment2_f);
 
       /* End of Outputs for SubSystem: '<S24>/Subsystem1' */
     } else {
@@ -1901,21 +1693,21 @@ void rover_sw_pwrtrain_24b::step()
        *  CCaller: '<S33>/vesc_send_duty_left'
        *  Switch: '<S33>/Switch'
        */
-      rtb_BusAssignment1_e.data = vesc_send_duty_left
+      rtb_BusAssignment1_j.data = vesc_send_duty_left
         (rover_sw_pwrtrain_24b_B.throttle_out);
 
       /* MATLABSystem: '<S39>/SinkBlock' */
-      Pub_rover_sw_pwrtrain_24b_542.publish(&rtb_BusAssignment1_e);
+      Pub_rover_sw_pwrtrain_24b_542.publish(&rtb_BusAssignment1_j);
 
       /* BusAssignment: '<S33>/Bus Assignment2' incorporates:
        *  CCaller: '<S33>/vesc_send_duty_right'
        *  Switch: '<S33>/Switch1'
        */
-      rtb_BusAssignment2_g.data = vesc_send_duty_right
+      rtb_BusAssignment2_f.data = vesc_send_duty_right
         (rover_sw_pwrtrain_24b_B.throttle_out);
 
       /* MATLABSystem: '<S40>/SinkBlock' */
-      Pub_rover_sw_pwrtrain_24b_543.publish(&rtb_BusAssignment2_g);
+      Pub_rover_sw_pwrtrain_24b_543.publish(&rtb_BusAssignment2_f);
 
       /* End of Outputs for SubSystem: '<S24>/Subsystem' */
     }
@@ -1942,7 +1734,7 @@ void rover_sw_pwrtrain_24b::step()
     rover_sw_pwrtrain_24b_DW.obj_j.WheelRadius = 0.095;
   }
 
-  forwardUp = false;
+  searchFlag = false;
   rtb_OR = true;
   rover_sw_pwrtrain_24b_B.ret = 0;
   exitg1 = false;
@@ -1959,10 +1751,10 @@ void rover_sw_pwrtrain_24b::step()
   }
 
   if (rtb_OR) {
-    forwardUp = true;
+    searchFlag = true;
   }
 
-  if (!forwardUp) {
+  if (!searchFlag) {
     if (rover_sw_pwrtrain_24b_DW.obj_j.isInitialized == 1) {
       rover_sw_pwrtrain_24b_DW.obj_j.TunablePropsChanged = true;
       rover_sw_pwrtrain_24b_DW.obj_j.tunablePropertyChanged[2] = true;
@@ -2021,101 +1813,106 @@ void rover_sw_pwrtrain_24b::step()
     if ((rover_sw_pwrtrain_24b_B.Product >=
          rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0]) || rtIsNaN
         (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0])) {
-      rover_sw_pwrtrain_24b_B.y = rover_sw_pwrtrain_24b_B.Product;
+      rover_sw_pwrtrain_24b_B.minDistance = rover_sw_pwrtrain_24b_B.Product;
     } else {
-      rover_sw_pwrtrain_24b_B.y =
+      rover_sw_pwrtrain_24b_B.minDistance =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0];
     }
 
-    forwardUp = !rtIsNaN
+    searchFlag = !rtIsNaN
       (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1]);
-    if ((!(rover_sw_pwrtrain_24b_B.y <=
+    if ((!(rover_sw_pwrtrain_24b_B.minDistance <=
            rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1])) &&
-        forwardUp) {
-      rover_sw_pwrtrain_24b_B.y =
+        searchFlag) {
+      rover_sw_pwrtrain_24b_B.minDistance =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1];
     }
 
     if ((rover_sw_pwrtrain_24b_B.Product1 >=
          rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0]) || rtIsNaN
         (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0])) {
-      rover_sw_pwrtrain_24b_B.overshootDist = rover_sw_pwrtrain_24b_B.Product1;
+      rover_sw_pwrtrain_24b_B.lookaheadIdx = rover_sw_pwrtrain_24b_B.Product1;
     } else {
-      rover_sw_pwrtrain_24b_B.overshootDist =
+      rover_sw_pwrtrain_24b_B.lookaheadIdx =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0];
     }
 
-    if ((!(rover_sw_pwrtrain_24b_B.overshootDist <=
+    if ((!(rover_sw_pwrtrain_24b_B.lookaheadIdx <=
            rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1])) &&
-        forwardUp) {
-      rover_sw_pwrtrain_24b_B.overshootDist =
+        searchFlag) {
+      rover_sw_pwrtrain_24b_B.lookaheadIdx =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1];
     }
 
-    rover_sw_pwrtrain_24b_B.Add = (rover_sw_pwrtrain_24b_B.overshootDist +
-      rover_sw_pwrtrain_24b_B.y) *
+    rover_sw_pwrtrain_24b_B.Add = (rover_sw_pwrtrain_24b_B.lookaheadIdx +
+      rover_sw_pwrtrain_24b_B.minDistance) *
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius / 2.0;
 
     /* MATLABSystem: '<S47>/MATLAB System' */
     rover_sw_pwrtrain_24b_B.MATLABSystem[2] =
-      (rover_sw_pwrtrain_24b_B.overshootDist - rover_sw_pwrtrain_24b_B.y) *
+      (rover_sw_pwrtrain_24b_B.lookaheadIdx -
+       rover_sw_pwrtrain_24b_B.minDistance) *
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius /
       (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.TrackWidth / 2.0 * 2.0);
     break;
 
    case 1:
-    rover_sw_pwrtrain_24b_B.Add =
+    rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp =
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.TrackWidth / 2.0 *
       rover_sw_pwrtrain_24b_B.Product1;
     rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] =
-      (rover_sw_pwrtrain_24b_B.Product - rover_sw_pwrtrain_24b_B.Add) /
+      (rover_sw_pwrtrain_24b_B.Product -
+       rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp) /
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius;
-    rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] = (rover_sw_pwrtrain_24b_B.Add +
-      rover_sw_pwrtrain_24b_B.Product) /
+    rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] =
+      (rover_sw_pwrtrain_24b_B.lookaheadStartPt_tmp +
+       rover_sw_pwrtrain_24b_B.Product) /
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius;
-    forwardUp = rtIsNaN(rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange
-                        [0]);
+    searchFlag = rtIsNaN
+      (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0]);
     if ((rover_sw_pwrtrain_24b_B.lookaheadStartPt[0] >=
          rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0]) ||
-        forwardUp) {
-      rover_sw_pwrtrain_24b_B.y = rover_sw_pwrtrain_24b_B.lookaheadStartPt[0];
+        searchFlag) {
+      rover_sw_pwrtrain_24b_B.minDistance =
+        rover_sw_pwrtrain_24b_B.lookaheadStartPt[0];
     } else {
-      rover_sw_pwrtrain_24b_B.y =
+      rover_sw_pwrtrain_24b_B.minDistance =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0];
     }
 
     rtb_OR = !rtIsNaN(rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1]);
-    if ((!(rover_sw_pwrtrain_24b_B.y <=
+    if ((!(rover_sw_pwrtrain_24b_B.minDistance <=
            rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1])) &&
         rtb_OR) {
-      rover_sw_pwrtrain_24b_B.y =
+      rover_sw_pwrtrain_24b_B.minDistance =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1];
     }
 
     if ((rover_sw_pwrtrain_24b_B.lookaheadStartPt[1] >=
          rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0]) ||
-        forwardUp) {
-      rover_sw_pwrtrain_24b_B.overshootDist =
+        searchFlag) {
+      rover_sw_pwrtrain_24b_B.lookaheadIdx =
         rover_sw_pwrtrain_24b_B.lookaheadStartPt[1];
     } else {
-      rover_sw_pwrtrain_24b_B.overshootDist =
+      rover_sw_pwrtrain_24b_B.lookaheadIdx =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[0];
     }
 
-    if ((!(rover_sw_pwrtrain_24b_B.overshootDist <=
+    if ((!(rover_sw_pwrtrain_24b_B.lookaheadIdx <=
            rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1])) &&
         rtb_OR) {
-      rover_sw_pwrtrain_24b_B.overshootDist =
+      rover_sw_pwrtrain_24b_B.lookaheadIdx =
         rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelSpeedRange[1];
     }
 
-    rover_sw_pwrtrain_24b_B.Add = (rover_sw_pwrtrain_24b_B.overshootDist +
-      rover_sw_pwrtrain_24b_B.y) *
+    rover_sw_pwrtrain_24b_B.Add = (rover_sw_pwrtrain_24b_B.lookaheadIdx +
+      rover_sw_pwrtrain_24b_B.minDistance) *
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius / 2.0;
 
     /* MATLABSystem: '<S47>/MATLAB System' */
     rover_sw_pwrtrain_24b_B.MATLABSystem[2] =
-      (rover_sw_pwrtrain_24b_B.overshootDist - rover_sw_pwrtrain_24b_B.y) *
+      (rover_sw_pwrtrain_24b_B.lookaheadIdx -
+       rover_sw_pwrtrain_24b_B.minDistance) *
       rover_sw_pwrtrain_24b_DW.obj_j.KinModel.WheelRadius /
       (rover_sw_pwrtrain_24b_DW.obj_j.KinModel.TrackWidth / 2.0 * 2.0);
     break;
@@ -2134,12 +1931,12 @@ void rover_sw_pwrtrain_24b::step()
     /* BusAssignment: '<S27>/Bus Assignment1' incorporates:
      *  MATLAB Function: '<S27>/MATLAB Function1'
      */
-    rtb_BusAssignment1_f.data = (((rover_sw_pwrtrain_24b_B.voltages[0] +
+    rtb_BusAssignment1_a5.data = (((rover_sw_pwrtrain_24b_B.voltages[0] +
       rover_sw_pwrtrain_24b_B.voltages[1]) + rover_sw_pwrtrain_24b_B.voltages[2])
       + rover_sw_pwrtrain_24b_B.voltages[3]) / 4.0F;
 
-    /* MATLABSystem: '<S56>/SinkBlock' */
-    Pub_rover_sw_pwrtrain_24b_818.publish(&rtb_BusAssignment1_f);
+    /* MATLABSystem: '<S55>/SinkBlock' */
+    Pub_rover_sw_pwrtrain_24b_818.publish(&rtb_BusAssignment1_a5);
 
     /* MATLAB Function: '<S27>/MATLAB Function2' incorporates:
      *  Math: '<S27>/Transpose'
@@ -2154,16 +1951,16 @@ void rover_sw_pwrtrain_24b::step()
     memcpy(&rover_sw_pwrtrain_24b_B.BusAssignment.data[0],
            &rover_sw_pwrtrain_24b_B.data[0], sizeof(real32_T) << 7U);
 
-    /* MATLABSystem: '<S57>/SinkBlock' */
+    /* MATLABSystem: '<S56>/SinkBlock' */
     Pub_rover_sw_pwrtrain_24b_822.publish(&rover_sw_pwrtrain_24b_B.BusAssignment);
 
     /* BusAssignment: '<S27>/Bus Assignment2' incorporates:
      *  Math: '<S27>/Transpose'
      */
-    rtb_BusAssignment2_kf.data = rover_sw_pwrtrain_24b_B.voltages[0];
+    rtb_BusAssignment2_h.data = rover_sw_pwrtrain_24b_B.voltages[0];
 
-    /* MATLABSystem: '<S58>/SinkBlock' */
-    Pub_rover_sw_pwrtrain_24b_835.publish(&rtb_BusAssignment2_kf);
+    /* MATLABSystem: '<S57>/SinkBlock' */
+    Pub_rover_sw_pwrtrain_24b_835.publish(&rtb_BusAssignment2_h);
   }
 
   if (rtmIsMajorTimeStep((&rover_sw_pwrtrain_24b_M))) {
@@ -2288,7 +2085,6 @@ void rover_sw_pwrtrain_24b::initialize()
 
   {
     int32_T i;
-    static const int16_T tmp[8] = { 10000, 2, 1, 1, 1, 1, 1, 1 };
 
     /* Start for MATLABSystem: '<S14>/SourceBlock' */
     rover_sw_pwrtrain_24b_DW.obj_i.QOSAvoidROSNamespaceConventions = false;
@@ -2363,19 +2159,12 @@ void rover_sw_pwrtrain_24b::initialize()
     rover_sw_pwrtrain_24b_DW.obj_h.isSetupComplete = true;
 
     /* Start for MATLABSystem: '<S25>/Pure Pursuit' */
-    rover_sw_pwrtrain_24b_DW.obj.CacheInputSizes = false;
     rover_sw_pwrtrain_24b_DW.objisempty_e = true;
     rover_sw_pwrtrain_24b_DW.obj.DesiredLinearVelocity = 0.5;
     rover_sw_pwrtrain_24b_DW.obj.MaxAngularVelocity = 1.0;
     rover_sw_pwrtrain_24b_DW.obj.LookaheadDistance = 0.1;
     rover_sw_pwrtrain_24b_DW.obj.isInitialized = 1;
-    for (i = 0; i < 8; i++) {
-      rover_sw_pwrtrain_24b_DW.obj.inputVarSize[0].f1[i] = 1U;
-      rover_sw_pwrtrain_24b_DW.obj.inputVarSize[1].f1[i] = static_cast<uint32_T>
-        (tmp[i]);
-    }
-
-    for (i = 0; i < 20000; i++) {
+    for (i = 0; i < 1756; i++) {
       rover_sw_pwrtrain_24b_DW.obj.WaypointsInternal[i] = (rtNaN);
     }
 
@@ -2448,7 +2237,7 @@ void rover_sw_pwrtrain_24b::initialize()
     DifferentialDriveKinematics_set(&rover_sw_pwrtrain_24b_DW.obj_j);
     rover_sw_pwrtrain_24b_DW.obj_j.TunablePropsChanged = false;
 
-    /* Start for MATLABSystem: '<S56>/SinkBlock' */
+    /* Start for MATLABSystem: '<S55>/SinkBlock' */
     rover_sw_pwrtrain_24b_DW.obj_ju.QOSAvoidROSNamespaceConventions = false;
     rover_sw_pwrtrain_24b_DW.obj_ju.matlabCodegenIsDeleted = false;
     rover_sw_pwrtrain_24b_DW.objisempty_o = true;
@@ -2457,7 +2246,7 @@ void rover_sw_pwrtrain_24b::initialize()
     ro_Publisher_setupImpl_mygou5bo(&rover_sw_pwrtrain_24b_DW.obj_ju);
     rover_sw_pwrtrain_24b_DW.obj_ju.isSetupComplete = true;
 
-    /* Start for MATLABSystem: '<S57>/SinkBlock' */
+    /* Start for MATLABSystem: '<S56>/SinkBlock' */
     rover_sw_pwrtrain_24b_DW.obj_k.QOSAvoidROSNamespaceConventions = false;
     rover_sw_pwrtrain_24b_DW.obj_k.matlabCodegenIsDeleted = false;
     rover_sw_pwrtrain_24b_DW.objisempty_p = true;
@@ -2466,7 +2255,7 @@ void rover_sw_pwrtrain_24b::initialize()
     r_Publisher_setupImpl_mygou5bow(&rover_sw_pwrtrain_24b_DW.obj_k);
     rover_sw_pwrtrain_24b_DW.obj_k.isSetupComplete = true;
 
-    /* Start for MATLABSystem: '<S58>/SinkBlock' */
+    /* Start for MATLABSystem: '<S57>/SinkBlock' */
     rover_sw_pwrtrain_24b_DW.obj_d.QOSAvoidROSNamespaceConventions = false;
     rover_sw_pwrtrain_24b_DW.obj_d.matlabCodegenIsDeleted = false;
     rover_sw_pwrtrain_24b_DW.objisempty = true;
@@ -2683,7 +2472,7 @@ void rover_sw_pwrtrain_24b::terminate()
   /* End of Terminate for MATLABSystem: '<S40>/SinkBlock' */
   /* End of Terminate for SubSystem: '<S24>/Subsystem' */
 
-  /* Terminate for MATLABSystem: '<S56>/SinkBlock' */
+  /* Terminate for MATLABSystem: '<S55>/SinkBlock' */
   if (!rover_sw_pwrtrain_24b_DW.obj_ju.matlabCodegenIsDeleted) {
     rover_sw_pwrtrain_24b_DW.obj_ju.matlabCodegenIsDeleted = true;
     if ((rover_sw_pwrtrain_24b_DW.obj_ju.isInitialized == 1) &&
@@ -2692,9 +2481,9 @@ void rover_sw_pwrtrain_24b::terminate()
     }
   }
 
-  /* End of Terminate for MATLABSystem: '<S56>/SinkBlock' */
+  /* End of Terminate for MATLABSystem: '<S55>/SinkBlock' */
 
-  /* Terminate for MATLABSystem: '<S57>/SinkBlock' */
+  /* Terminate for MATLABSystem: '<S56>/SinkBlock' */
   if (!rover_sw_pwrtrain_24b_DW.obj_k.matlabCodegenIsDeleted) {
     rover_sw_pwrtrain_24b_DW.obj_k.matlabCodegenIsDeleted = true;
     if ((rover_sw_pwrtrain_24b_DW.obj_k.isInitialized == 1) &&
@@ -2703,9 +2492,9 @@ void rover_sw_pwrtrain_24b::terminate()
     }
   }
 
-  /* End of Terminate for MATLABSystem: '<S57>/SinkBlock' */
+  /* End of Terminate for MATLABSystem: '<S56>/SinkBlock' */
 
-  /* Terminate for MATLABSystem: '<S58>/SinkBlock' */
+  /* Terminate for MATLABSystem: '<S57>/SinkBlock' */
   if (!rover_sw_pwrtrain_24b_DW.obj_d.matlabCodegenIsDeleted) {
     rover_sw_pwrtrain_24b_DW.obj_d.matlabCodegenIsDeleted = true;
     if ((rover_sw_pwrtrain_24b_DW.obj_d.isInitialized == 1) &&
@@ -2714,7 +2503,7 @@ void rover_sw_pwrtrain_24b::terminate()
     }
   }
 
-  /* End of Terminate for MATLABSystem: '<S58>/SinkBlock' */
+  /* End of Terminate for MATLABSystem: '<S57>/SinkBlock' */
 }
 
 /* Constructor */

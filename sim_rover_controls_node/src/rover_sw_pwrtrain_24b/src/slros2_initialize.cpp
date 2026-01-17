@@ -1,5 +1,5 @@
 // Copyright 2022-2024 The MathWorks, Inc.
-// Generated 11-Jan-2026 12:00:11
+// Generated 16-Jan-2026 23:21:42
 #include "slros2_initialize.h"
 // rover_sw_pwrtrain_24b/ros_publish/Publish1
 SimulinkPublisher<std_msgs::msg::Int32,SL_Bus_std_msgs_Int32> Pub_rover_sw_pwrtrain_24b_907;

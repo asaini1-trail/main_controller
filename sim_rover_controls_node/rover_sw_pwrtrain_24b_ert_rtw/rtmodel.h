@@ -4,7 +4,7 @@
  * Code generation for Simulink model "rover_sw_pwrtrain_24b".
  *
  * Simulink Coder version                : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Sun Jan 11 12:00:06 2026
+ * C++ source code generated on : Fri Jan 16 23:21:35 2026
  *
  * Note that the generated code is not dependent on this header file.
  * The file is used in cojuction with the automatic build procedure.

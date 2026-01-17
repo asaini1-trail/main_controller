@@ -4,9 +4,9 @@
 //
 // Code generated for Simulink model 'rover_sw_pwrtrain_24b'.
 //
-// Model version                  : 1.102
+// Model version                  : 1.108
 // Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
-// C/C++ source code generated on : Sun Jan 11 12:00:11 2026
+// C/C++ source code generated on : Fri Jan 16 23:25:00 2026
 //
 #ifdef _MSC_VER
 #pragma warning(push)
