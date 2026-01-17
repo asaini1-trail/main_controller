@@ -1,0 +1,18 @@
+import pandas as pd
+import folium
+
+df = pd.read_csv("gps_track_20260111_124604.csv")  # lat, lon, alt
+
+m = folium.Map(
+    location=[df.lat.mean(), df.lon.mean()],
+    zoom_start=18,
+    tiles="Stamen Terrain"
+)
+
+folium.PolyLine(
+    df[['lat', 'lon']].values,
+    color="lime",
+    weight=4
+).add_to(m)
+
+m.save("trailhead_run.html")
