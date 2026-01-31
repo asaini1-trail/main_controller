@@ -4,9 +4,9 @@
 //
 // Code generated for Simulink model 'rover_sw_pwrtrain_24b'.
 //
-// Model version                  : 1.108
+// Model version                  : 1.145
 // Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
-// C/C++ source code generated on : Fri Jan 16 23:21:42 2026
+// C/C++ source code generated on : Sat Jan 31 01:10:16 2026
 //
 #include "ros2nodeinterface.h"
 rclcpp::Node::SharedPtr SLROSNodePtr;

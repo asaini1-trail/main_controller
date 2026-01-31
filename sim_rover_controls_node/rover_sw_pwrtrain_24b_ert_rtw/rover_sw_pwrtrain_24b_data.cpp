@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.108
+ * Model version              : 1.145
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Fri Jan 16 23:21:35 2026
+ * C++ source code generated on : Sat Jan 31 01:10:01 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -19,10 +19,21 @@
 
 #include "rover_sw_pwrtrain_24b.h"
 
+/* Invariant block signals (default storage) */
+const ConstB_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_ConstB = {
+  {
+    0
+  },                                   /* '<S1>/Bus Assignment3' */
+
+  {
+    0
+  }                                    /* '<S1>/Bus Assignment2' */
+};
+
 /* Constant parameters (default storage) */
 const ConstP_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_ConstP = {
   /* Expression: waypoints
-   * Referenced by: '<S26>/Constant4'
+   * Referenced by: '<S58>/Constant4'
    */
   { 0.0, -0.123, -0.287, -0.424, -0.547, -0.547, -0.52, -0.629, -0.7521, -0.848,
     -0.9021, -1.2171, -1.2441, -1.3122, -1.3942, -1.4221, -1.2852, -1.3401,
@@ -248,7 +259,7 @@ const ConstP_rover_sw_pwrtrain_24b_T rover_sw_pwrtrain_24b_ConstP = {
 /* Constant parameters with dynamic initialization (default storage) */
 ConstInitP_rover_sw_pwrtrain__T rover_sw_pwrtrain_24_ConstInitP = {
   /* Expression: WheelSpeedRange
-   * Referenced by: '<S47>/MATLAB System'
+   * Referenced by: '<S78>/MATLAB System'
    */
   { 0.0, 0.0 }
 };

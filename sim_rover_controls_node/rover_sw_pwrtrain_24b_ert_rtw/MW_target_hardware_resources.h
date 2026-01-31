@@ -23,7 +23,7 @@
 #define MW_BOARDPARAMETERS_USERNAME abhijeet
 #define MW_RUNTIME_BUILDACTION -1
 #define MW_ROS2INSTALL_FOLDER /opt/ros/humble
-#define MW_ROS2INSTALL_WORKSPACE home/abhijeet/ros2_ws
+#define MW_ROS2INSTALL_WORKSPACE /home/abhijeet/ros2_ws
 #define MW_ROS_REMOTEBUILD 1
 #define MW_ROS_GENERATEROSCONTROL 0
 #define MW_ROS_ROSTIMESTEPPING 0

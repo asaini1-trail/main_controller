@@ -4,10 +4,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
-#include <std_msgs/msg/float32_multi_array.hpp>
 #include <std_msgs/msg/int32.hpp>
-#include <std_msgs/msg/multi_array_dimension.hpp>
-#include <std_msgs/msg/multi_array_layout.hpp>
 #include "rover_sw_pwrtrain_24b_types.h"
 #include "slros_msgconvert_utils.h"
 
@@ -18,17 +15,8 @@ void convertToBus(SL_Bus_std_msgs_Bool* busPtr, const std_msgs::msg::Bool& msgPt
 void convertFromBus(std_msgs::msg::Float32& msgPtr, SL_Bus_std_msgs_Float32 const* busPtr);
 void convertToBus(SL_Bus_std_msgs_Float32* busPtr, const std_msgs::msg::Float32& msgPtr);
 
-void convertFromBus(std_msgs::msg::Float32MultiArray& msgPtr, SL_Bus_std_msgs_Float32MultiArray const* busPtr);
-void convertToBus(SL_Bus_std_msgs_Float32MultiArray* busPtr, const std_msgs::msg::Float32MultiArray& msgPtr);
-
 void convertFromBus(std_msgs::msg::Int32& msgPtr, SL_Bus_std_msgs_Int32 const* busPtr);
 void convertToBus(SL_Bus_std_msgs_Int32* busPtr, const std_msgs::msg::Int32& msgPtr);
-
-void convertFromBus(std_msgs::msg::MultiArrayDimension& msgPtr, SL_Bus_std_msgs_MultiArrayDimension const* busPtr);
-void convertToBus(SL_Bus_std_msgs_MultiArrayDimension* busPtr, const std_msgs::msg::MultiArrayDimension& msgPtr);
-
-void convertFromBus(std_msgs::msg::MultiArrayLayout& msgPtr, SL_Bus_std_msgs_MultiArrayLayout const* busPtr);
-void convertToBus(SL_Bus_std_msgs_MultiArrayLayout* busPtr, const std_msgs::msg::MultiArrayLayout& msgPtr);
 
 
 #endif

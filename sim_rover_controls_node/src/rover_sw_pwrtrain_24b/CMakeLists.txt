@@ -28,7 +28,6 @@ set (CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set (CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 # Node
 add_executable(rover_sw_pwrtrain_24b 
-src/get_telemetry_wrapper.c
 src/main.cpp
 src/ros2nodeinterface.cpp
 src/rover_sw_pwrtrain_24b.cpp
@@ -38,7 +37,6 @@ src/rtGetNaN.cpp
 src/rt_nonfinite.cpp
 src/slros2_initialize.cpp
 src/slros_busmsg_conversion.cpp
-src/vesc_uart.c
 )
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 target_compile_options(rover_sw_pwrtrain_24b PUBLIC 
@@ -99,4 +97,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Fri Jan 16 23:21:44 2026
+# Generated on Sat Jan 31 01:10:23 2026

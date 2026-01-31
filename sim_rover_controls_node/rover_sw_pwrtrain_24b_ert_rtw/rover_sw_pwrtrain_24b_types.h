@@ -6,9 +6,9 @@
  *
  * Code generation for model "rover_sw_pwrtrain_24b".
  *
- * Model version              : 1.108
+ * Model version              : 1.145
  * Simulink Coder version : 24.2 (R2024b) 21-Jun-2024
- * C++ source code generated on : Fri Jan 16 23:21:35 2026
+ * C++ source code generated on : Sat Jan 31 01:10:01 2026
  *
  * Target selection: ert.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -20,17 +20,6 @@
 #ifndef rover_sw_pwrtrain_24b_types_h_
 #define rover_sw_pwrtrain_24b_types_h_
 #include "rtwtypes.h"
-#ifndef DEFINED_TYPEDEF_FOR_collision_flt_
-#define DEFINED_TYPEDEF_FOR_collision_flt_
-
-typedef enum {
-  NONE = 0,                            /* Default value */
-  MILD,
-  SEVERE
-} collision_flt;
-
-#endif
-
 #ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Int32_
 #define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Int32_
 
@@ -61,51 +50,14 @@ struct SL_Bus_std_msgs_Bool
 
 #endif
 
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_ROSVariableLengthArrayInfo_
+#ifndef DEFINED_TYPEDEF_FOR_collision_flt_
+#define DEFINED_TYPEDEF_FOR_collision_flt_
 
-struct SL_Bus_ROSVariableLengthArrayInfo
-{
-  uint32_T CurrentLength;
-  uint32_T ReceivedLength;
-};
-
-#endif
-
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayDimension_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayDimension_
-
-struct SL_Bus_std_msgs_MultiArrayDimension
-{
-  uint8_T label[128];
-  SL_Bus_ROSVariableLengthArrayInfo label_SL_Info;
-  uint32_T size;
-  uint32_T stride;
-};
-
-#endif
-
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayLayout_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_MultiArrayLayout_
-
-struct SL_Bus_std_msgs_MultiArrayLayout
-{
-  SL_Bus_std_msgs_MultiArrayDimension dim[16];
-  SL_Bus_ROSVariableLengthArrayInfo dim_SL_Info;
-  uint32_T data_offset;
-};
-
-#endif
-
-#ifndef DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Float32MultiArray_
-#define DEFINED_TYPEDEF_FOR_SL_Bus_std_msgs_Float32MultiArray_
-
-struct SL_Bus_std_msgs_Float32MultiArray
-{
-  SL_Bus_std_msgs_MultiArrayLayout layout;
-  real32_T data[128];
-  SL_Bus_ROSVariableLengthArrayInfo data_SL_Info;
-};
+typedef enum {
+  NONE = 0,                            /* Default value */
+  MILD,
+  SEVERE
+} collision_flt;
 
 #endif
 
@@ -120,7 +72,7 @@ typedef enum {
 
 #endif
 
-/* Custom Type definition for MATLABSystem: '<S57>/SinkBlock' */
+/* Custom Type definition for MATLABSystem: '<S75>/SinkBlock' */
 #include "rmw/qos_profiles.h"
 #ifndef struct_sJ4ih70VmKcvCeguWN0mNVF
 #define struct_sJ4ih70VmKcvCeguWN0mNVF
